@@ -14,7 +14,19 @@ Android-App (Kotlin / Jetpack Compose), die unterbrochene Gedanken und „Fäden
 - Persistenz lokal (Room), Liste neueste zuerst
 - Suche, Löschen, Sync, Store: noch nicht
 
-## Voraussetzungen
+## Am Handy testen (Debug-APK)
+
+Fertige Debug-Builds hängen am Release **[v0.1.0-debug](https://github.com/Kreizbiggl/faden-verloren/releases/tag/v0.1.0-debug)** (Asset `app-debug.apk`).
+
+1. Auf dem Handy den Link öffnen und `app-debug.apk` laden
+2. Wenn Android nachfragt: Installation aus **unbekannten Quellen** für Browser oder Dateien erlauben
+3. APK tippen → installieren → „Faden verloren“ öffnen
+
+Hinweis: Das ist ein **Debug**-Build (kein Play-Store-Signing). Bei jedem CI-Lauf wird der Release aktualisiert.
+
+CI-Workflow: `.github/workflows/android-debug.yml` (auch manuell unter Actions → „Android Debug APK“ → Run workflow).
+
+## Voraussetzungen (Entwicklung)
 
 - [Android Studio](https://developer.android.com/studio) (Ladybug oder neuer empfohlen)
 - JDK 17
