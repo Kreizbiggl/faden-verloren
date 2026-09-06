@@ -5,4 +5,5 @@
     <string name="save">Speichern</string>
     <string name="list_title">Gespeicherte Fäden</string>
     <string name="list_empty">Noch keine Fäden — schreib etwas und tippe Speichern.</string>
+    <!-- Debug-APK via GitHub Actions -->
 </resources>
