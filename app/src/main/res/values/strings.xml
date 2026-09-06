@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Faden verloren</string>
+    <string name="capture_placeholder">Gedanken erfassen</string>
+    <string name="mvp_hint">Platzhalter — Speichern und Liste kommen als Nächstes.</string>
+</resources>
