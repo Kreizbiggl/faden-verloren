@@ -5,10 +5,14 @@ Android-App (Kotlin / Jetpack Compose), die unterbrochene Gedanken und „Fäden
 ## Idee (MVP)
 
 - Gedanken in Sekunden erfassen (Text)
-- Liste der erfassten Fäden
-- Wiederfinden per Suche
+- Liste der erfassten Fäden (lokal per Room/SQLite)
+- Wiederfinden per Suche *(noch offen)*
 
-Dieses Repo startet mit einem **minimalen Gerüst**: eine Start-Activity mit Compose-Screen (App-Name + Platzhalter „Gedanken erfassen“). Speichern, Liste und Suche folgen als nächste Schritte.
+## Aktueller Stand
+
+- Start-Screen mit Textfeld und **Speichern**
+- Persistenz lokal (Room), Liste neueste zuerst
+- Suche, Löschen, Sync, Store: noch nicht
 
 ## Voraussetzungen
 
@@ -35,9 +39,9 @@ Oder per Kommandozeile (wenn der Gradle-Wrapper vorhanden ist):
 
 ## Projektstruktur (kurz)
 
-- `app/src/main/java/de/kreizbiggl/fadenverloren/` — Kotlin-Quellcode
-- `app/src/main/res/` — Ressourcen (Strings, Theme)
-- `app/build.gradle.kts` — App-Modul (Compose, SDK)
+- `app/.../data/` — Room: `Faden`, Dao, Datenbank
+- `app/.../MainActivity.kt` — Erfassen + Liste
+- `app/.../FadenViewModel.kt` — Speichern / Beobachten
 
 ## Lizenz
 
